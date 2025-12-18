@@ -91,6 +91,39 @@
             z-index: 1;
         }
 
+        .floating-img {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .img1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(-15deg);
+        }
+
+        .img2 {
+            top: 60%;
+            right: 8%;
+            transform: rotate(12deg);
+        }
+
+        .img3 {
+            bottom: 15%;
+            left: 8%;
+            transform: rotate(-8deg);
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
         @media (max-width: 480px) {
             .container {
                 padding: 25px;
@@ -104,10 +137,19 @@
                 padding: 25px 15px;
                 font-size: 1em;
             }
+
+            .floating-img {
+                width: 100px;
+                height: 100px;
+            }
         }
     </style>
 </head>
 <body>
+    <img src="images/photo1.jpg" alt="" class="floating-img img1">
+    <img src="images/photo2.jpg" alt="" class="floating-img img2">
+    <img src="images/photo3.jpg" alt="" class="floating-img img3">
+    
     <div class="container">
         <h1>🔊 Soundboard</h1>
         <div class="soundboard">
