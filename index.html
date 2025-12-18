@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8">
   <title>HUEHUEHUE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <div class="container">
     <h1>HUEHUEHUE</h1>
-    <p class="subtitle">an experimental sound system</p>
+    <p class="subtitle">oficiální zvukový systém</p>
 
     <div class="board">
-      <button>Classic Hue</button>
-      <button>Cursed Hue</button>
-      <button>Final Boss Hue</button>
+      <button onclick="playSound(1)">Klasické hue</button>
+      <button onclick="playSound(2)">Lehce prokleté hue</button>
+      <button onclick="playSound(3)">Divné hue</button>
+      <button onclick="playSound(4)">Hodně divné hue</button>
+      <button onclick="playSound(5)">Nepříjemné hue</button>
+      <button onclick="playSound(6)">Chaotické hue</button>
+      <button onclick="playSound(7)">Finální hue</button>
     </div>
 
-    <p class="footer">use responsibly</p>
+    <p class="footer">používej zodpovědně</p>
   </div>
 
   <script src="script.js"></script>
