@@ -119,6 +119,48 @@
             transform: rotate(-8deg);
         }
 
+        .love-section {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        .love-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .love-img.left {
+            transform: rotate(-8deg);
+        }
+
+        .love-img.right {
+            transform: rotate(8deg);
+        }
+
+        .heart {
+            font-size: 3em;
+            color: #ff6b9d;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
         .container {
             position: relative;
             z-index: 2;
@@ -142,13 +184,35 @@
                 width: 100px;
                 height: 100px;
             }
+
+            .love-section {
+                top: 2%;
+                right: 50%;
+                transform: translateX(50%);
+                gap: 10px;
+            }
+
+            .love-img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .heart {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="images/photo1.jpg" alt="" class="floating-img img1">
-    <img src="images/photo2.jpg" alt="" class="floating-img img2">
+    <img src="images/photo1.webp" alt="" class="floating-img img1">
+    <img src="images/photo2.webp" alt="" class="floating-img img2">
     <img src="images/photo3.jpg" alt="" class="floating-img img3">
+    
+    <div class="love-section">
+        <img src="images/person1.jpg" alt="" class="love-img left">
+        <div class="heart">❤️</div>
+        <img src="images/person2.webp" alt="" class="love-img right">
+    </div>
     
     <div class="container">
         <h1> VOCABULARY NOTEBOOK PRO ADRI LOL</h1>
